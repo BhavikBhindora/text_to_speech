@@ -20,7 +20,7 @@ converter.setProperty('volume', 0.7)
 # # There will be a pause between
 # # each one like a pause in 
 # # a sentence
-speech=converter.say(open(r"C:\Users\LENOVO\Downloads\Kaam Ki Baat-20240225T133932Z-001\Kaam Ki Baat\Text to Speech\Text to Speech\Demo_text.txt", "r",encoding='cp437',errors='ignore').readline().replace("\n", " "))
+speech=converter.say(open(r"Your/path/to/.txt/file", "r",encoding='cp437',errors='ignore').readline().replace("\n", " "))
 
   
 # # Empties the say() queue
@@ -32,7 +32,7 @@ voice_id = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN
 converter.setProperty('voice', voice_id)
   
 converter.runAndWait()
-converter.save_to_file(open(r"C:\Users\LENOVO\Downloads\Kaam Ki Baat-20240225T133932Z-001\Kaam Ki Baat\Text to Speech\Text to Speech\Demo_text.txt", "r",encoding='cp437',errors='ignore').readline().replace("\n", " "), r"C:\Users\LENOVO\Downloads\Kaam Ki Baat-20240225T133932Z-001\Kaam Ki Baat\Text to Speech\Text to Speech/DemoBB2.mp3")
+converter.save_to_file(open(r"Your/path/to/.txt/file", "r",encoding='cp437',errors='ignore').readline().replace("\n", " "), r"Path/to/save/audiofile/DemoBB.mp3")
 
 voices = converter.getProperty('voices')
 for voice in voices:
