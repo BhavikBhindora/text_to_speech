@@ -18,8 +18,7 @@ Clone or download this repository to your local machine.
 Ensure you have a text file with the content you want to convert to speech.
 Modify the Demo_text.txt file to include your desired text.
 Run the text_to_speech.py script:
-
-```python text_to_speech.py```
+```python text_to_speech.py```.
 Adjust the voice properties such as speed and volume as needed by modifying the corresponding lines in the script.
 Check the console output to see information about available voices on your system.
 Explore additional functionalities and customize the program according to your requirements.
